@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav {
+    background-color: #F5F512;
+    color: black;
+    height: 50px;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    font-family: 'Rampart One', cursive;
+    justify-content: center;
+    margin: 20px 20px;
+    border-radius: 15px;
+}
+
+.gameContainer {
+
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.container {
+
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Secular One', sans-serif;
+
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(241, 196, 242);
+}
+
+.gameInfo {
+    padding: 0px 30px;
+}
+
+.gameInfo h1 {
+    font-family: 'Secular One', sans-serif;
+}
+
+.imageBox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.imageBox {
+    margin: 2px 2px;
+}
+
+.infoclass {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.info {
+    font-family: 'Secular One', sans-serif;
+}
+
+#reset {
+    background: yellow;
+    margin: 2px 35px;
+    border: 2px solid black;
+    padding: 7px 31px;
+    border-radius: 8px;
+    font-family: 'Rampart One', cursive;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+
+}
